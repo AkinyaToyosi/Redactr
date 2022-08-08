@@ -1,11 +1,21 @@
-import startApp from './app.mjs';
+//import startApp from './app.mjs';
+//  getData
+//  Scramble words 
+let btn = document.getElementById('btn')
+btn.addEventListener('click', getData)
+
 function getData() {
-  let text = document.getElementById("text").value.split(" ");
+  let text = document.getElementById("text").value.split(" "); //  words are split into arrays for easier manipulations
   let asterisk = "*";
   let repText = document.getElementById("scramble").value.split(" ");
 
+
+  // this array ho;s the index of word we would like to match 
   const indexes = [];
   let result
+
+
+  // this is where we compare for matches 
 
   for (let index = 0; index < text.length; index++) {
     if (text[index] === repText[0] || text[index] === repText[1]) {
@@ -17,5 +27,5 @@ function getData() {
   document.getElementById('demo').innerText = text.join(' ')
 
 }
-export default getData
-document.addEventListener('DOMContentLoaded', startApp);
+
+//document.addEventListener('DOMContentLoaded', startApp);
