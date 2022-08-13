@@ -1,9 +1,13 @@
 //import startApp from './app.mjs';
 //  getData
 //  Scramble words 
+
+//  gettin the submit button and listening for a 'click' event
 let btn = document.getElementById('btn')
 btn.addEventListener('click', getData)
 
+
+//    This function is called pnce the 'Redactr' is clicked  
 function getData() {
   let text = document.getElementById("text").value.split(" "); //  words are split into arrays for easier manipulations
   let asterisk = "*";
@@ -28,4 +32,4 @@ function getData() {
 
 }
 
-//document.addEventListener('DOMContentLoaded', startApp);
+//document.addEventListener('DOMContentLoaded', startApp);s
