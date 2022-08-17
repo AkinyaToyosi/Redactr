@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Open+Sans:wght@300&display=swap');
+
+body{
+  
+    border: 1px solid black;
+    height: 100%;
+    background: url('./bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+
+
+}
+main{
+    margin-top: 4em;
+    background: rgba(0, 0,0, 0.9);
+}
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Bigelow Rules';
+    font-size: 72px;
+    color: #0ccac4;
+}
+form{
+   
+    margin: auto;
+    height: 100vh;
+    width: 55%;
+    text-align: center;
+    
+}
+label{
+    color: whitesmoke;
+    font-family: 'Roboto Slab', serif;
+    
+    
+    
+}
+input{
+    height: 40px;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    margin-top: 10px;
+    background: transparent;
+    color: whitesmoke;
+    border: 1px solid #0ccac4;
+    
+}
+p{
+    color: whitesmoke;
+    border: 1px solid black;
+    background: black;
+    height: 30px;
+}
+button{
+    background-color:#0ccac4 ;
+    color: black;
+    height: auto;
+    border-radius: 8px;
+    font-family: 'Roboto Slab', serif;
+    padding: 20px;
+    transform: scale(1);
+    transition: transform 0.25s ease-out;
+}
+button:hover{
+    background-color: transparent;
+    color: whitesmoke;
+    transform: scale(1.05);
+    border: 1px solid #0ccac4;
+}
