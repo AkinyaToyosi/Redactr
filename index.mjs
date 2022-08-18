@@ -54,5 +54,4 @@ function getData() {
  
 }
 
-document.getElementById('redactr').style.display = 'none'
 //document.addEventListener('DOMContentLoaded', startApp);s

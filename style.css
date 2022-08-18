@@ -3,7 +3,7 @@
 body{
   
     border: 1px solid black;
-    height: 100vh;
+    height: 130vh;
     background: url('./bg.png');
     background-size: 100% 100%;
     background-repeat: repeat;
@@ -12,6 +12,7 @@ body{
 
 }
 main{
+    height: auto;
     margin-top: 2em;
     background: rgba(0, 0,0, 0.9);
 }
@@ -23,10 +24,17 @@ h1{
     font-size: 72px;
     color: #0ccac4;
 }
+h2{
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Bigelow Rules';
+    font-size: 72px;
+    color: #0ccac4;
+}
 form{
    
     margin: auto;
-    height: 150vh;
+    height: 80vh;
     width: 55%;
     text-align: center;
     
@@ -77,11 +85,11 @@ button:hover{
     border: 1px solid red;
 }
 .sec-2{
-    height: 100%;
+    
 }
 .contain{
     margin-top: 10px;
-
+    font-family: 'Roboto Slab', serif;
     background: rgba(0, 0,0, 0.9);
     height: 300px;
     text-align: center;
@@ -98,7 +106,7 @@ button:hover{
         
     }
     .sec-2{
-        margin-top: 5em;
+        margin-top: 2em;
         width: 100%;
     }
     
