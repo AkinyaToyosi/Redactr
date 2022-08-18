@@ -25,25 +25,22 @@ function getData() {
   let repText = document.getElementById("scramble").value.split(" ");
 
 
-  // this array ho;s the index of word we would like to match 
-  let indexes = [];
-  let result
-
+  
 
   // this is where we compare for matches 
 
   for (let index = 0; index < text.length; index++) {
     if (repText.includes(text[index]))  {
       
-      result = text.splice(index, 1, asterisk.repeat(text[index].length))
-      console.log(result)
-      
-      
+      //replacing the matched words
+      // splice doesn't use index-based counting, so it allowed us delete and replace same particular value using the value of index
+       text.splice(index, 1, asterisk.repeat(text[index].length))
+       console.log(index)
     }
     
   }
   document.getElementById('demo').innerText = text.join(' ')
- console.log(indexes)
+ 
 }
 
 //document.addEventListener('DOMContentLoaded', startApp);s
