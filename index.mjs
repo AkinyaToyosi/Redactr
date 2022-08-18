@@ -26,21 +26,24 @@ function getData() {
 
 
   // this array ho;s the index of word we would like to match 
-  const indexes = [];
+  let indexes = [];
   let result
 
 
   // this is where we compare for matches 
 
   for (let index = 0; index < text.length; index++) {
-    if (text[index] === repText[0] || text[index] === repText[1]) {
-      indexes.push(index);
+    if (repText.includes(text[index]))  {
+      
       result = text.splice(index, 1, asterisk.repeat(text[index].length))
+      console.log(result)
+      
+      
     }
-
+    
   }
   document.getElementById('demo').innerText = text.join(' ')
-
+ console.log(indexes)
 }
 
 //document.addEventListener('DOMContentLoaded', startApp);s
