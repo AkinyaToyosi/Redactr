@@ -34,11 +34,13 @@ function getData() {
 
   for (let index = 0; index < text.length; index++) {
     if (repText.includes(text[index]))  {
-      indexes.push(index)
+      
+      result = text.splice(index, 1, asterisk.repeat(text[index].length))
+      console.log(result)
+      
       
     }
     
-     result = text.splice(indexes[index], 1, asterisk.repeat(text[index].length))
   }
   document.getElementById('demo').innerText = text.join(' ')
  console.log(indexes)
