@@ -6,7 +6,18 @@
 let btn = document.getElementById('btn')
 btn.addEventListener('click', getData)
 
+// getting the reset button
+let reset = document.getElementById('submit')
+submit.addEventListener('click', resetInput)
 
+//   this function is called once the reset button is clicked 
+function resetInput(){
+  let text = document.getElementById("text").value = ''
+  let repText = document.getElementById("scramble").value = ''
+
+  
+  
+}
 //    This function is called pnce the 'Redactr' is clicked  
 function getData() {
   let text = document.getElementById("text").value.split(" "); //  words are split into arrays for easier manipulations
