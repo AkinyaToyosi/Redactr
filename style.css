@@ -46,7 +46,18 @@ label{
     
     
 }
+#text{
+    height: 4em;
+    background-color: rgba(0, 0,0, 0.9);
+    color: #0ccac4;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #0ccac4 ;
+}
 input{
+    padding: 15px;
+    color: #0ccac4;
     height: 40px;
     border-radius: 8px;
     margin-top: 10px;
@@ -64,6 +75,8 @@ p{
 button{
     background-color:#0ccac4 ;
     color: black;
+    font-weight: 1000;
+    font-size: larger;
     height: auto;
     border-radius: 8px;
     font-family: 'Roboto Slab', serif;
@@ -98,11 +111,12 @@ button:hover{
 }
 
 
-@media only screen and (min-width : 600px){
+@media only screen and (min-width : 800px){
     main{
         margin-top: 0.2em;
         display: flex;
         flex-direction: row-reverse;
+        height: 100%;
         
     }
     .sec-2{
