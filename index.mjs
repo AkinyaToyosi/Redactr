@@ -57,7 +57,7 @@ function getData() {
 
 // scrambled text goes in here
   document.getElementById('demo').innerText = text.join(' ')
-  document.getElementById('report').innerHTML = `${text.length } ${text.length > 1 ? 'words were' : 'word was' }  scanned <br/> In total, ${indexes.length} ${indexes.length > 1 ? 'words were' : 'word was' } scrambled  in ${rand.toFixed(2)} seconds`
+  document.getElementById('report').innerHTML = `${text.length } ${text.length > 1 ? 'words were' : 'word was' }  scanned <br/> In total, ${repText.length} ${repText.length > 1 ? 'words were' : 'word was' } scrambled  in ${rand.toFixed(2)} seconds`
   
  // that was a handful..lol
   
