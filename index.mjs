@@ -25,9 +25,9 @@ function resetInput(){
 //    This function is called pnce the 'Redactr' is clicked  
 function getData() {
   let character = prompt('what character would you love to see your scrambled text in')
-  let text = document.getElementById("text").value.trim().split(" "); //  words are split into arrays for easier manipulations
+  let text = document.getElementById("text").value.toLowerCase().trim().split(" "); //  words are split into arrays for easier manipulations
   
-  let repText = document.getElementById("scramble").value.split(" ");
+  let repText = document.getElementById("scramble").value.toLowerCase().split(" ");
 
 
   let indexes = []
