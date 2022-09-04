@@ -1,69 +1,52 @@
-# AltSchool Semester 1 Holiday Challenge
+# Redactr - Scramble some words from a body of text content 
+Simple redact app created with HTML, CSS and JavaScript.
 
-### What
-Solidify what you’ve learnt by building cool simple things you can showcase
+## Table of Contents
+* [App-link](#app-link)
+* [Description](#description)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Screenshot](#screenshot)
+* [Status](#status)
+* [Credits](#credits)
+* [License](#license)
 
-### Why
-Practice makes perfect. We’re getting you ready for all the fun projects in the coming semester
+### App link
+https://redactr-hearbreakers.netlify.app/
 
+### Description
+This app helps people safely share content on social media by scrambling portion of the text that they don't want others to read/see. A user will write/paste the content and then specify the words they need to be scrambled (using another field), after which they specify a character to replace scrambled text with. 
 
-### How
-*   Build any one of the below projects as a group / team, using Repl.it 
-*   Vanilla HTML/CSS and Javascript is sufficient to build these projects as fully functional apps, so don’t use any fancy libraries or frameworks. Doing so can cost you some points!
-*   It’s a healthy competition amongst teams, so try your best to make your application functional, clean and presentable
+Note: The user is allowed to specify more than one word (seperated by space) to be scrambled. 
 
-## Projects
+The app also calculates the time taken to complete the operation.
 
-> As a team, decide which of the below projects you are excited about, then go ahead and build it. 
----
-> Make sure to *always* update the `app.properties` file within the project codebase to reflect the choice of project as well as details of the team Rep and all the members working to build it. 
+### Technologies 
+* HTML 5
+* CSS 3
+* JavaScript ES6
 
+### Setup 
+This app is opened in your browser as it is a simple web-app. After following the steps in [description](#description), click "Redact Now'. The app scans through the original text and replaces the specified words to be scrambled with asterisks (i.e *** or whatever you want to be displayed.)
 
-### 01 - Phonie: Identify the telecoms carrier from a phone number
+### Screenshot
+![screenshot](/Screenshot%20(5).png)
 
-#### Scenario
+### Status
+This app is a task from AltSchool Africa's Semester 1 Holiday Challenge. 
 
-A user is filling a form in your web application and they are required to enter their phone number into a form field.
+### Credits 
+* Favour Timothy  <p>  [![Gmail](https://img.shields.io/twitter/url?label=favourkcb%40gmail.com&logo=gmail&style=social&url=https%3A%2F%2Fredactr-hearbreakers.netlify.app%2F)](mailto:favourkcb@gmail.com) [![Twitter](https://img.shields.io/twitter/url?label=shunnode&logo=twitter&style=social&url=https%3A%2F%2Fredactr-hearbreakers.netlify.app%2F)](https://www.twitter.com/shunnode) [![Github](https://img.shields.io/twitter/url?label=wyenelle&logo=github&style=social&url=https%3A%2F%2Fredactr-hearbreakers.netlify.app%2F)](https://github.com/wyenelle) </p>
 
-#### Outcome
+* Toyosi Akinya   <p>  [![Gmail](https://img.shields.io/twitter/url?label=toyosiakinya2%40gmail.com&logo=gmail&style=social&url=https%3A%2F%2Fredactr-hearbreakers.netlify.app%2F)](mailto:toyosiakinya2@gmail.com) [![Twitter](https://img.shields.io/twitter/url?label=Ty_Akinya&logo=twitter&style=social&url=https%3A%2F%2Fredactr-hearbreakers.netlify.app%2F)](https://twitter.com/Ty_Akinya) [![Github](https://img.shields.io/twitter/url?label=AkinyaToyosi&logo=Github&style=social&url=https%3A%2F%2Fredactr-hearbreakers.netlify.app%2F)](https://github.com/AkinyaToyosi) </p>
 
-After typing the phone number into the form field, the UI indicates that it is an MTN or GLO or Airtel or Etisalat number e.t.c (e.g if its an MTN line, display the MTN icon/logo somewhere beside the form field)
+### License 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-#### Advanced features (OPTIONAL- build any, some or all of the following if you feel up to it) 
+Copyright (c) 2022 Charles Opute Odili
 
-* Add validation - Use the `pattern` attribute of the HTML form field to restrict phone numbers to a certain carrier, e.g restrict to only Airtel such that entering an MTN/GLO number would be invalid
-* Support +XYZ country codes (e.g +234 for Nigeria) - Still detect the carrier even if the user prefixed the number with their +XYZ country code
-* Show auto-completion - Show suggestions as the user starts typing the phone number. E.g once they type 080, show them that 080*3* and 080*6* and other possible *matching* variants of the carrier
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-### 02- Redactr - Scramble some words from a body of text content
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-#### Scenario
-
-Your app is to help people safely share content on social media by scrambling portions of the text they don’t want the world to read/see. A user will write/paste the some content into a form field and then specify the words they need to be scrambled (using another field). Note the user is allowed to specify more than one word (separated by space) to be scrambled.
-
-#### Outcome
-After clicking a “Redact Now” button, the app scans through the original text and replaces the specified words to be scrambled with asterisks (i.e ***)
-
-#### Advanced features (OPTIONAL- build any, some or all of the following if you feel up to it) 
-
-* Allow the user specify what to use in replacing the words, so that the app can do the scrambling with what the user provides, be it asterisks, questions marks, dashes, underscores, or even other words
-* Display some stats like how many words were scanned, how many matched the words to be scrambled, how many characters were scrambled in total, how long it took (in seconds) to complete the scrambling task e.t.c. Feel free to be creative here
-
-### SchoolStat - A simple dashboard for a tech school
-
-#### Scenario
-
-You have data about which instructors are taking the courses in a school, as well as data about which students are in the frontend, backend or cloud tracks. Your users need to see some basic stats about the school
-
-#### Outcome: 
-
-When the user opens your dashboard app, they see HTML tables showing the following statistics/summaries
-* How many courses a given instructor is taking
-* How many students are in each of the tracks (frontend, backend and cloud)
-* How many students are male, female or other genders/orientation
-* Minimum, maximum, and average age of students in the school
-
-#### Advanced features (OPTIONAL- build any, some or all of the following if you feel up to it) 
-
-* Make the tables sortable by (at least) the column holding the numbers. Indicate what columns are sortable (e.g with an icon or by adding the <> charectars in the column header e.t.c). When the user clicks on a sortable column header, sort the records in the table by that column (e.g switch the current sort order such that if the column was already sorted ASC, sort in DESC)
-
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
